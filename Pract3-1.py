@@ -1,5 +1,7 @@
-sec=int(input())
-h=sec//3600
-m=(sec%3600)//60
-s=sec%60
-print(f'{h:02d}:{m:02d}:{s:02d}')
+t=input()
+print(f'Длина: {len(t)}')
+print(f'Верхний регистр: {t.upper()}')
+print(f'Нижний регистр: {t.lower()}')
+print(f'Первый символ: {t[0]}')
+print(f'Последний символ: {t[-1]}')
+print(f'Количество пробелов: {t.count(' ')}')
