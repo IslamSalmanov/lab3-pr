@@ -1,8 +1,5 @@
-a, b=float(input()), float(input())
-print(f"Сумма: {a+b}")
-print(f"Разность: {a-b}")
-print(f"Произведение: {a*b}")
-print(f"Деление: {a/b:.2f}")
-print(f"Целочисленное деление: {a//b}")
-print(f"Остаток: {a%b}")
-print(f"Степень: {a**b:.2f}")
+sec=int(input())
+h=sec//3600
+m=(sec%3600)//60
+s=sec%60
+print(f'{h:02d}:{m:02d}:{s:02d}')
