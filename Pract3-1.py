@@ -1,7 +1,5 @@
-t=input()
-print(f'Длина: {len(t)}')
-print(f'Верхний регистр: {t.upper()}')
-print(f'Нижний регистр: {t.lower()}')
-print(f'Первый символ: {t[0]}')
-print(f'Последний символ: {t[-1]}')
-print(f'Количество пробелов: {t.count(' ')}')
+a,b,c=float(input()), float(input()), float(input())
+x=(a+b+c)/3
+print(f'Среднее арифметическое: {x:.2f}')
+print(f'Максимальное: {max(a,b,c)}')
+print(f'Минимальное: {min(a,b,c)}')

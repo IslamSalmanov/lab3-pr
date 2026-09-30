@@ -1,21 +1,17 @@
 #include <iostream>
-#include <string>
+#include <iomanip>
 #include <algorithm>
-#include <cctype>
 int main(){
-    std::string t;
-    std::cout << "Введите строку: ";
-    std::getline(std::cin, t);
-    std::cout << "Длина: " << t.length() << "\n";
-    std::string upper=t;
-    std::transform(upper.begin(), upper.end(), upper.begin(),[](unsigned char c) { return std::toupper(c); });
-    std::cout << "Верхний регистр: " << upper << "\n";
-    std::string lower=t;
-    std::transform(lower.begin(), lower.end(), lower.begin(),[](unsigned char c) {return std::tolower(c); });
-    std::cout << "Нижний регистр: " << lower << "\n";
-    std::cout << "Первый символ: " << t.front() << "\n";
-    std::cout << "Последний символ: " << t.back() << "\n";
-    int sp=std::count(t.begin(),t.end(), ' ');
-    std::cout << "Количество пробелов: " << sp << "\n";
+    double a,b,c;
+    std::cout << "Введите первое число: ";
+    std::cin >> a;
+    std::cout << "Введите второе число: ";
+    std::cin >> b;
+    std::cout << "Введите третье число: ";
+    std::cin >> c;
+    std::cout << std::fixed << std::setprecision(2);
+    std::cout << "Среднее арифметическое: " << double((a+b+c)/3.0) << "\n";
+    std::cout << "Максимальное: " << std::max({a,b,c}) << "\n";
+    std::cout << "Минимальное: " << std::min({a,b,c}) << "\n";
     return 0;
 }
